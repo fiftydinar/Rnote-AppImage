@@ -15,6 +15,8 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export OUTNAME="$PACKAGE"-"$VERSION"-anylinux-"$ARCH".AppImage
 export DESKTOP=/usr/share/applications/com.github.flxzt.rnote.desktop
 export ICON=/usr/share/icons/hicolor/scalable/apps/com.github.flxzt.rnote.svg
+export EXEC_WRAPPER=1
+export EXEC_WRAPPER_SOURCE="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/851b1996e7ecc17bbd038430115e43f15a05026f/useful-tools/exec.c"
 export DEPLOY_OPENGL=1
 export STARTUPWMCLASS=rnote # For Wayland, this is 'com.github.flxzt.rnote', so this needs to be changed in desktop file manually by the user in that case until some potential automatic fix exists for this
 
